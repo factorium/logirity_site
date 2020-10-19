@@ -66,7 +66,7 @@ db.collection("agendamentos").doc("10192020").onSnapshot(function(doc){
             document.getElementById("timerStatus").innerHTML =  "<span style='color:#f5e768'>Entrega deste caminhão está no tempo estipulado!</span>";
          }
          else{
-             document.getElementById("timerStatus").innerHTML =  "<span style='color:#f5e768'>Entrega ainda não começou</span>";
+             document.getElementById("timerStatus").innerHTML =  "<span style='color:#fafafa'>Entrega ainda não começou</span>";
          }
          
          
