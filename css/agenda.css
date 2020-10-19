@@ -1,0 +1,155 @@
+.header,
+.trip,
+.footer {
+  padding-left: 15px;
+  padding-right: 1s5px;
+}
+
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+.container {
+  position: relative;
+}
+
+.panel {
+  border: 3px solid #fcaf17;
+  background-color: #040733;
+  border-radius: 4px;
+  margin: 1rem 0 2rem;
+  padding: 1.9rem;
+  box-shadow: none;
+}
+
+.panel_live {
+  color: #78f58d;
+}
+
+.panel_late {
+  color: #f56d68;
+}
+
+.panel_close {
+  color: #f5e768;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.jumbotron {
+  text-align: center;
+  color: #fcaf17;
+  background-color: #00000000;
+}
+
+.panel__date,
+.panel__day {
+  color: #fcaf17;
+}
+
+.trip__title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fbfbfb;
+}
+
+.agenda__col {
+  padding: 0 3px;
+}
+
+.col-lg-2.agenda__col--notes {
+  font-size: 12px;
+}
+
+.panel__title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 3rem;
+  color: #fafafa;
+}
+
+.panel__title--sub {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 2em;
+  color: #795F5F;
+}
+
+.dado {
+  color: #fcaf17;
+}
+
+.dado-tempo {
+  color: #fcaf17;
+  font-size: 13px;
+}
+
+i.glyphicon.glyphicon-road {
+  color: #e91b93;
+}
+
+i.glyphicon.glyphicon-home {
+  color: #e9d81b;
+}
+
+.scrollspy {
+  position: absolute;
+  right: 0;
+  z-index: 999;
+}
+
+.application {
+  border-top: 1px solid #c1e1ec;
+}
+
+.affix-top {
+  position: absolute;
+  right: 0;
+  width: 80px;
+}
+
+.affix {
+  top: 3px;
+  right: 0;
+}
+
+.affix,
+.affix-bottom {
+  width: 80px;
+}
+
+.affix-bottom {
+  position: absolute;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1230px;
+  }
+
+  .header,
+.footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=agenda.css.map */
