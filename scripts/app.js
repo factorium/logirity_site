@@ -35,7 +35,7 @@ db.collection("agendamentos").doc("10192020").onSnapshot(function(doc){
     
         //MOSTRANDO NO HTML
             //document.getElementById("atualizado").innerHTML =  atualizado;
-            document.getElementById("distance").innerHTML =  distance + " mm";
+            document.getElementById("distance").innerHTML =  distance + " cm";
             document.getElementById("name").innerHTML =  name;
             document.getElementById("timer").innerHTML =  timer + " segundos";
             
