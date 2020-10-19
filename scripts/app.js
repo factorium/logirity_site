@@ -13,10 +13,11 @@ db.collection("agendamentos").doc("10192020").onSnapshot(function(doc){
     //MOSTRANDO NO HTML
      document.getElementById("placa").innerHTML =  placa;
      document.getElementById("motor").innerHTML =  motor;
+     document.getElementById("tipo_truck").innerHTML =  tipo_truck;
      document.getElementById("empresa").innerHTML =  empresa;
      document.getElementById("checkin").innerHTML =  checkin.toDate();
      document.getElementById("checkout").innerHTML =  checkout.toDate();
-     document.getElementById("tipo_truck").innerHTML =  tipo_truck;
+    
 
 
      
