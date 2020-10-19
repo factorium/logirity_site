@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/compiler/bootstrap.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/compiler/style.css">
+  <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+
+  <title>FACTORIUM</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div class="navnav">
+  <ul class="nav" id="menu">
+    <li class="select"><a href="#home" >HOME</a></li>
+    <li><a href="#about">O DESAFIO</a></li>
+    <li><a href="calendar.html">CALENDÁRIO</a></li>
+  </ul>
+</div>
+  <span class="menu-icon" id="toggle" onclick="menuToggle()">
+    <script type="text/javascript">
+      function menuToggle() {
+        var nav = document.getElementById("menu");
+        nav.classList.toggle('active');
+        var toggle = document.getElementById("toggle");
+        toggle.classList.toggle('active');
+      }
+    </script>
+  </span>
+
+  <!-- PRIMEIRA SECTION (HOME) -->
+  <section id="home">
+    <div id="particles-js">
+      <div class="home">
+        <h1 class="text-primary"><b class="text-light i-log">[</b><b class="logirity"></b><b class="i-log2">]</b></h1>
+        <h3 class="text-light">O melhor da logística especialmente para você</h3>
+      </div>
+      <a href="#sla">
+        <img src="../media/icons/down-yellow.svg" class="down" />
+      </a>
+    </div>
+  </section>
+  <section id="sla">
+  </section>
+  <!-- SEGUNDA SECTION (SOBRE NÓS) -->
+  <section id="about">
+    <iframe src="https://drive.google.com/file/d/1kjiebXaAh9_K1x6p5XTCJxkL8LfbMnIL/preview" width="960" height="500" style="margin-left:5%"></iframe>
+    <div class="about">
+      <h2 class="text-tertiary"><b><span class="text-dark"><span class="i-log-amarelo-dark">[</span>O</span> DESAFIO<span class="i-log2-amarelo-dark">]</span></b></h1>
+        <p class="text-dark about-text">Nós do Grupo FACTORIUM recebemos o desafio da Empresa CABOT, uma solução para os
+          problemas de logística enfrentados pela empresa, ocasionam atrasos, erros de planejamento e o mais importante
+          de tudo, perda de dinheiro!<br /> Mas nós realizamos uma série de experimentos com o obejtivo de melhorar a
+          experiência do usuário, apresentamos à vocês LOGIRITY a função de Logística inteligente e Segurança que toda
+          empresa precisa</p>
+    </div>
+  </section>
+
+
+
+
+  <!-- SCRIPTS -->
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script defer src="../node_modules/swup/dist/swup.min.js"></script>
+  <script defer src="../node_modules/typed.js/lib/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script type="text/javascript" src="../particles/particles.js"></script>
+  <script type="text/javascript" src="../particles/app.js"></script>
+  <!-- SCRIPT PARA ESCRITA H1 -->
+  <script type="text/javascript">
+    var typed = new Typed('.logirity', {
+      strings: ["<span class='text-light'>LOGISTICS</span>  <br> <span class='i-log'>+</span>  SECURITY", "","<span class='text-light'>LOG</span><span class='i-log'>I</span><span class='text-primary'>RITY</span>"],
+      typeSpeed: 70,
+      smartBackspace: true,
+      backSpeed: 40,fadeOut: false,
+      showCursor: false,
+    });</script>
+
+    <!-- SCRIPT PARA NAV ACTIVE  -->
+  
+
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<html>
+  <html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  CSS -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/compiler/calendar.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/compiler/popup.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/compiler/agenda.css">
+
+  <title>Calendário</title>
+</head>
+
+<body>
+
+  <ul class="nav" id="menu">
+    <li style="list-style-type: none;"><a href="index.html" class="back" ><</a></li>
+  </ul>
+  <div id="particles-js"></div>
+  <div class="calendar" id="calendar-app">
+    <h1 class="calendar__title " style="margin-top:-30px;">Selecione a data</h1>
+  <div class="calendar--day-view" id="day-view">
+    <span class="day-view-exit" id="day-view-exit">&times;</span>
+    <span class="day-view-date" id="day-view-date">MAY 29 2016</span>
+    <div class="day-view-content">
+
+    
+
+    </div>
+  </div>
+  <div class="calendar--view" id="calendar-view">
+    <div class="cview__month">
+      <span class="cview__month-last" id="calendar-month-last">Apr</span>
+      <span class="cview__month-current" id="calendar-month">May</span>
+      <span class="cview__month-next" id="calendar-month-next">Jun</span>
+    </div>
+    <div class="cview__header">Dom</div>
+    <div class="cview__header">Seg</div>
+    <div class="cview__header">Ter</div>
+    <div class="cview__header">Qua</div>
+    <div class="cview__header">Qui</div>
+    <div class="cview__header">Sex</div>
+    <div class="cview__header">Sab</div>
+    <div class="calendar--view" id="dates">
+    </div>
+  </div>
+  <div class="footer">
+    <span><span id="footer-date" class="footer__link">Pão de batata</span></span>  
+    
+  </div>
+ 
+</div>
+<div id="agendado" class="popup">
+  
+  <div class="popup__block">
+   
+  <div class="jumbotron">
+    <h1 id="data_select" class="data_select">19/10/2020</h1>
+    <p>Coletas agendadas para o dia selecionado!</p>
+  </div>
+<div class="container">
+    <div class="row trip">
+      <div class="col-lg-12 col-md-pull-1 col-md-11 col-xs-12">
+      
+        <!-- CARD AGENDAMENTO -->
+          <div class="row">
+            <div class="col-lg-12 panel">
+              <div class="agenda">
+                <h1 style="text-align:center; color:#fafafa">
+                 NENHUM AGENDAMENTO PARA HOJE!
+                </h1>
+                </div>
+
+
+
+                </div>
+              </div><a href="#" class="popup__close">close</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="agendados" class="popup">
+  
+  <div class="popup__block">
+   
+  <div class="jumbotron">
+    <h1 id="data_selected" class="data_select">19/10/2020</h1>
+    <p>Coletas agendadas para o dia selecionado!</p>
+  </div>
+<div class="container">
+    <div class="row trip">
+      <div class="col-lg-12 col-md-pull-1 col-md-11 col-xs-12">
+      
+        <!-- CARD AGENDAMENTO -->
+          <div class="row">
+            <div class="col-lg-12 panel">
+              <div class="agenda">
+                <!-- PRIMEIRA LINHA -->
+                <div class="row agenda__head"style="margin-bottom:4%">
+                  <!-- EMPRESA -->
+                  <div class="col-lg-6 trip__title" >
+                    Empresa: &nbsp<b id="empresa" class="dado">EMPRESA LINDA</b>
+                  </div>
+                  <!-- PLACA CAMINHÃO -->
+                  <div class="col-lg-6 trip__title">
+                    Placa do Caminhão: &nbsp<b id="placa" class="dado"></b>
+                  </div>
+                  <!-- MOTORISTA ALOCADO -->
+                  <div class="col-lg-5 agenda__col trip__title">
+                    Motorista Alocado:&nbsp <b id="motor" class="dado"> James Donk</b>
+                  </div>
+                 
+                </div>
+                <hr/>
+                <!-- SEGUNDA LINHA -->
+                <div class="row agenda__head" style="margin-top: 4%; margin-bottom: 4%;">
+                  <!-- TIPO CAMINHÃO -->
+                  <div class="col-lg-7 trip__title">
+                    Tipo de Caminhão: &nbsp<b id="tipo_truck" class="dado">TIPO DO CAMINHÃO</b>
+                  </div>
+                   <!-- TIPO ENCOMENDA -->
+                   <div class="col-lg-7 trip__title">
+                    Tipo de Encomenda: &nbsp<b id="name" class="dado">TIPO DA ENCOMENDA</b>
+                  </div>
+                 
+                </div>
+                <hr/>
+                <!-- TERCEIRA LINHA -->
+                <div class="agenda__content clearfix" style="margin-top: 4%; margin-bottom: 4%;">
+                 <!-- BAIA -->
+                 <div class="col-xs-5 agenda__col trip__title">
+                  Baia Alocada: <b class="dado" id="bayStatus">3</b>
+                  </div> 
+                <!-- TEMPO -->
+                <div class="col-xs-4 agenda__col trip__title">
+                  Tempo Alocado: &nbsp<b class="dado" id="timer">24min</b>
+                </div>
+                 <!-- TEMPO -->
+                 <div class="col-xs-3 agenda__col trip__title">
+                  Distância: &nbsp<b class="dado" id="distance">DISTÂNICA DA BAIA</b>
+                </div>
+              </div>
+                 <!-- QUARTA LINHA -->
+                 <div class="agenda__content clearfix" style="margin-top: 4%; margin-bottom: 4%;">
+                  <!-- TIMER STATUS -->
+                  <div class=" agenda__col trip__title" style="text-transform: uppercase;">
+                  STATUS: <b id="timerStatus">TIMER STATUS</b>
+                   </div> 
+                 </div>
+
+                 <hr/>
+                <div class="agenda__content clearfix" style="margin-top: 4%; margin-bottom: 4%;">
+                  <div class="col-xs-6 agenda__col trip__title">
+                    Checkin: &nbsp<b id="checkin" class="dado-tempo">Não realizou checkin</b>
+                  </div>
+                    <div class="col-xs-6 agenda-col trip__title">
+                      Checkout: &nbsp<b id="checkout" class="dado-tempo">Não realizou checkout</b>
+                    </div>
+                  </div>
+                </div>
+              </div><a href="#" class="popup__close">close</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+<script>
+  var firebaseConfig = {
+      apiKey: "AIzaSyBEKb41IdCFcdu3iWJEwGQsG-UhPMCC0pE",
+      authDomain: "logirity.firebaseapp.com",
+      databaseURL: "https://logirity.firebaseio.com",
+      projectId: "logirity",
+      storageBucket: "logirity.appspot.com",
+      messagingSenderId: "754308597404",
+      appId: "1:754308597404:web:aa1512cb0afbe3d2410f59",
+      measurementId: "G-C91NKDJMZK"
+  };
+      
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+</script>
+<script src="../scripts/app.js"></script>
+<script type="text/javascript" src="../scripts/script_calendar.js"></script>
+<script type="text/javascript" src="../particles/particles.js"></script>
+<script type="text/javascript" src="../particles/app_calendar.js"></script>
+</body>
+</html>

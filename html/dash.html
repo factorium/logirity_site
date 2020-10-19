@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/compiler/bootstrap.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/compiler/dash.css">
+  <link rel="stylesheet" href="../https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <title>Dashboard</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+
+
+  <div class="truck-card-blue col-md-2 barbarian"  id="btn1" onclick="cliquei1()">
+    <div class="truck-card__image truck-card__image--barbarian">
+      <img src="../media/img/dahsboard/isotanque.png" alt="barbarian" />
+    </div>
+    <div class="truck-card__level truck-card__level--barbarian">Level 4</div>
+    <div class="truck-card__unit-name">Recebimento de matéria prima</div>
+
+    <div class="truck-card__unit-stats truck-card__unit-stats--barbarian clearfix">
+      <div class="one-third">
+        <div class="stat">2</div>
+        <div class="stat-value">Na empresa</div>
+      </div>
+
+      <div class="one-third">
+        <div class="stat">16</div>
+        <div class="stat-value">agendados</div>
+      </div>
+
+      <div class="one-third no-border">
+        <div class="stat">291</div>
+        <div class="stat-value">concluídas</div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <div class="truck-card-yellow archer col-md-2">
+    <div class="truck-card__image truck-card__image--archer">
+      <img src="../media/img/dahsboard/carreta sider.png" alt="barbarian" />
+    </div>
+    <div class="truck-card__level truck-card__level--barbarian">Level 4</div>
+    <div class="truck-card__unit-name">Recebimento de Produto Importado</div>
+
+
+    <div class="truck-card__unit-stats truck-card__unit-stats--archer clearfix">
+      <div class="one-third">
+        <div class="stat">20<sup>S</sup></div>
+        <div class="stat-value">Training</div>
+      </div>
+
+      <div class="one-third">
+        <div class="stat">16</div>
+        <div class="stat-value">Speed</div>
+      </div>
+
+      <div class="one-third no-border">
+        <div class="stat">150</div>
+        <div class="stat-value">concluídas</div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="truck-card-blue barbarian col-md-2">
+    <div class="truck-card__image truck-card__image--barbarian">
+      <img src="../media/img/dahsboard/isotanque.png" alt="barbarian" />
+    </div>
+    <div class="truck-card__level truck-card__level--barbarian">Level 4</div>
+    <div class="truck-card__unit-name">Recebimento de matéria prima</div>
+
+    <div class="truck-card__unit-stats truck-card__unit-stats--barbarian clearfix">
+      <div class="one-third">
+        <div class="stat">20<sup>S</sup></div>
+        <div class="stat-value">Training</div>
+      </div>
+
+      <div class="one-third">
+        <div class="stat">16</div>
+        <div class="stat-value">Speed</div>
+      </div>
+
+      <div class="one-third no-border">
+        <div class="stat">150</div>
+        <div class="stat-value">Cost</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="truck-card-yellow archer col-md-2">
+    <div class="truck-card__image truck-card__image--archer">
+      <img src="../media/img/dahsboard/carreta sider.png" alt="barbarian" />
+    </div>
+    <div class="truck-card__level truck-card__level--barbarian">Level 4</div>
+    <div class="truck-card__unit-name">Recebimento de Produto Importado</div>
+
+
+    <div class="truck-card__unit-stats truck-card__unit-stats--archer clearfix">
+      <div class="one-third">
+        <div class="stat">20<sup>S</sup></div>
+        <div class="stat-value">Training</div>
+      </div>
+
+      <div class="one-third">
+        <div class="stat">16</div>
+        <div class="stat-value">Speed</div>
+      </div>
+
+      <div class="one-third no-border">
+        <div class="stat">150</div>
+        <div class="stat-value">Cost</div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+  <!-- GRÁFICOS -->
+  <section class="charts">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="chart-container"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+        <h3 class="chart-title">Chart</h3>
+        <canvas id="myChart" style="display: block; width: 537px; height: 268px;" width="537" height="268" class="chartjs-render-monitor"></canvas>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="chart-container"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+        <h3  class="chart-title">Chart2</h3>
+        <canvas id="myChart2" width="537" height="268" class="chartjs-render-monitor" style="display: block; width: 537px; height: 268px;"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="box bg-primary">
+        <i class="fa fa-eye"></i>
+        <h3>5,154</h3>
+        <p class="lead">Page views</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="box bg-danger">
+        <i class="fa fa-user-o"></i>
+        <h3>245</h3>
+        <p class="lead">User registered</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="box warning">
+        <i class="fa fa-shopping-cart"></i>
+        <h3>5,154</h3>
+        <p class="lead">Product sales</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="box success">
+        <i class="fa fa-handshake-o"></i>
+        <h3>5,154</h3>
+        <p class="lead">Transactions</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="chrt3">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="chart-container">
+        <canvas id="chart3" width="100%"></canvas>
+      </div>
+    </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
