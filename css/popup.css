@@ -153,4 +153,10 @@ hr {
   border: 1px solid #fcb01727;
 }
 
+@media (max-width:1927px){ 
+  .popup__block{
+    padding: 0% 25%;
+  }
+}
+
 /*# sourceMappingURL=popup.css.map */
