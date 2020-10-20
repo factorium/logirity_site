@@ -46,9 +46,10 @@ db.collection("agendamentos").doc("10192020").onSnapshot(function(doc){
         }
          else{
              if
-             ((bayStatus == false)&&(timer==0)){
+             ((bayStatus == false)&&(x==0)){
                 document.getElementById("bayStatus").innerHTML =  "Caminhão ainda não chegou na baia";
                 console.log(x)
+                  x++;
              }
              else{
                 document.getElementById("bayStatus").innerHTML =  "Caminhão já saiu da baia";
