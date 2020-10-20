@@ -32,7 +32,7 @@ db.collection("agendamentos").doc("10192020").onSnapshot(function(doc){
         var timer = doc.data().timer;
         var timerStatus = doc.data().timerStatus;
         var bayStatus = doc.data().bayStatus;
-        var x;
+        var x=0;
     
         //MOSTRANDO NO HTML
             //document.getElementById("atualizado").innerHTML =  atualizado;
