@@ -32,8 +32,7 @@ db.collection("agendamentos").doc("10192020").onSnapshot(function(doc){
         var timer = doc.data().timer;
         var timerStatus = doc.data().timerStatus;
         var bayStatus = doc.data().bayStatus;
-        var x=0;
-    
+
         //MOSTRANDO NO HTML
             //document.getElementById("atualizado").innerHTML =  atualizado;
             document.getElementById("distance").innerHTML =  distance + " cm";
@@ -46,10 +45,10 @@ db.collection("agendamentos").doc("10192020").onSnapshot(function(doc){
         }
          else{
              if
-             ((bayStatus == false)&&(x==0)){
+             (bayStatus == false){
                 document.getElementById("bayStatus").innerHTML =  "Caminhão ainda não chegou na baia";
                 console.log(x)
-                  x++;
+ 
              }
              else{
                 document.getElementById("bayStatus").innerHTML =  "Caminhão já saiu da baia";
