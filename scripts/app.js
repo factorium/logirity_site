@@ -41,13 +41,12 @@ db.collection("agendamentos").doc("10192020").onSnapshot(function(doc){
             
         if(bayStatus == true){
             document.getElementById("bayStatus").innerHTML =  "Caminhão está na baia";
-            console.log(x)
+
         }
          else{
              if
              (bayStatus == false){
                 document.getElementById("bayStatus").innerHTML =  "Caminhão ainda não chegou na baia";
-                console.log(x)
  
              }
              else{
